@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: <registry>/web-app:latest
+        image: anandshetty/simple-webapp:latest  # Fixed the image value
         ports:
         - containerPort: 80
