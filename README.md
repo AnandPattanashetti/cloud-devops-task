@@ -64,5 +64,13 @@ Here’s a high-level overview of the steps to deploy the solution:
 This solution involves provisioning a cloud-based Kubernetes environment using Terraform, deploying a simple web application, exposing it using NodePort, and monitoring it using Prometheus. The setup ensures that the application is easily accessible externally, and its performance and health are actively monitored.
 
 ## Screenshots
-![Script Running](https://github.com/AnandPattanashetti/cloud-devops-task/blob/main/Screenshot%20(722).png)
+![cluster created](https://github.com/AnandPattanashetti/cloud-devops-task/blob/main/Screenshot%20(722).png)
+![clusters](https://github.com/AnandPattanashetti/cloud-devops-task/blob/main/Screenshot%20(720).png)
+![clusters](https://github.com/AnandPattanashetti/cloud-devops-task/blob/main/Screenshot%20(721).png)
+![cluster created](https://github.com/AnandPattanashetti/cloud-devops-task/blob/main/Screenshot%20(722).png)
+![pods running](https://github.com/AnandPattanashetti/cloud-devops-task/blob/main/Screenshot%20(719).png)
+
+![the application](https://github.com/AnandPattanashetti/cloud-devops-task/blob/main/Screenshot%20(725).png)
+
+
 
