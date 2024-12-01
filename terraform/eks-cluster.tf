@@ -8,7 +8,7 @@ module "eks" {
   enable_irsa = true
 
   tags = {
-    cluster = "demo"
+    cluster = "atc-cloud-task"
   }
 
   vpc_id = module.vpc.vpc_id
@@ -16,11 +16,10 @@ module "eks" {
   eks_managed_node_group_defaults = {
     ami_type               = "AL2_x86_64"
     instance_types         = ["t3.medium"]
-    vpc_security_group_ids = [aws_security_group.all_worker_mgmt.id]
+    vpc_security_group_ids = [aws_security_group.atc_cloud_task_all_worker_mgmt.id]
   }
 
   eks_managed_node_groups = {
-
     node_group = {
       min_size     = 2
       max_size     = 6
