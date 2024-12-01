@@ -6,7 +6,7 @@ This task involves deploying a simple static web application to a cloud-based Ku
 
 ## Application Functionality
 
-The application serves a basic static web page (e.g., "Hello World"), and it is containerized using Docker. This containerized web application is deployed onto a Kubernetes cluster, with Prometheus set up for monitoring.
+The application serves a basic static web page (e.g., "WEL-COME TO THE ATC APPLICATION"), and it is containerized using Docker. This containerized web application is deployed onto a Kubernetes cluster, with Prometheus set up for monitoring.
 
 ## Key Components
 
