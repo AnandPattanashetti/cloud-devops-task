@@ -1,12 +1,11 @@
-
 provider "aws" {
-  region = var.aws_region
+  region = var.atc_cloud_task_aws_region
 }
 
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "abhi-eks-${random_string.suffix.result}"
+  cluster_name = "atc-cloud-task-eks-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
@@ -18,8 +17,8 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.7.0"
 
-  name                 = "abhi-eks-vpc"
-  cidr                 = var.vpc_cidr
+  name                 = "atc-cloud-task-eks-vpc"
+  cidr                 = var.atc_cloud_task_vpc_cidr
   azs                  = data.aws_availability_zones.available.names
   private_subnets      = ["10.0.1.0/24", "10.0.2.0/24"]
   public_subnets       = ["10.0.4.0/24", "10.0.5.0/24"]
